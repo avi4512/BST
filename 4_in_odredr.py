@@ -55,11 +55,10 @@ class BST:
     def in_order(self):
 
         if self.lchild:
-            self.lchild.pre_order()
-            print(self.data, ' ', end=" ")
+            self.lchild.in_order()
+        print(self.data, ' ', end=" ")
         if self.rchild:
-            self.rchild.pre_order()
-
+            self.rchild.in_order()
 
 root = BST(21)
 l = [10,30,5,12,25,100,3,7]
