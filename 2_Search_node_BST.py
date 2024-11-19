@@ -30,21 +30,22 @@ class BST:
                 self.rchild = BST(n)
 
 
-    def search(self,n,c=0):
+        def search(self, n, c=0):
         if self.data == n:
             print("Node Found...! at position {}".format(c))
-            return
-        if self.data > n:
+            return True
+        elif n < self.data:
             if self.lchild:
-                self.lchild.search(n,c+1)
+                return self.lchild.search(n, c + 1)
             else:
                 print("Node Not Found....!")
-        else:
-            if self.data > n:
-                self.lchild.search(n,c+1)
+                return False
+        else:  # n > self.data
+            if self.rchild:
+                return self.rchild.search(n, c + 1)
             else:
                 print("Node Not Found....!")
-
+                return False
     
 
 root = BST(10)
