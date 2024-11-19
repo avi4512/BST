@@ -1,6 +1,3 @@
-from pickle import PROTO
-
-
 class BST:
 
     def __init__(self,data):
