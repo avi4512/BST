@@ -62,11 +62,11 @@ class BST:
 
     def post_order(self):
         if self.lchild:
-            self.lchild.pre_order()
+            self.lchild.post_order()
 
         if self.rchild:
-            self.rchild.pre_order()
-            print(self.data, ' ', end=" ")
+            self.rchild.post_order()
+        print(self.data, ' ', end=" ")
 
 
 root = BST(21)
