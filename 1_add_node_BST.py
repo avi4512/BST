@@ -32,3 +32,10 @@ for i in l:
 print("Root Node:",root.data)
 print("Left Child:",root.lchild.data)
 print("Right Child:",root.rchild.data)
+
+'''
+o/p:
+Root Node: 10
+Left Child: 4
+Right Child: 20
+'''
